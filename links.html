@@ -63,6 +63,14 @@ Abraços
 </textarea>
 <button class="btn btn-primary" id="copiar-4">Copiar</button>
 
+<br><br>
+<p>Conheça a Wiseup (Para que não se matrículou)</p>
+<textarea name="" id="" cols="10" rows="1" class="link-text-5 form-control">
+https://bit.ly/3yjHiuW
+</textarea>
+<button class="btn btn-primary" id="copiar-5">Copiar</button>
+
+
 </div>
 <br><br><br><br><br>
 </body>
@@ -106,6 +114,14 @@ Abraços
        let button4 = document.querySelector('#copiar-4');
     button4.addEventListener('click', function(e) {
     let textArea = document.querySelector('.link-text-4');
+    textArea.select();
+    document.execCommand('copy');
+
+    });
+    //Botão do texto de validação 2
+    let button5 = document.querySelector('#copiar-5');
+    button5.addEventListener('click', function(e) {
+    let textArea = document.querySelector('.link-text-5');
     textArea.select();
     document.execCommand('copy');
 

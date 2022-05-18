@@ -6,3 +6,11 @@ a{
     text-decoration: none;
     color: rgb(74, 219, 74);
 }
+body{
+    background-color: rgb(29, 27, 27);
+    color: white;
+}
+.form-control{
+    background-color: black;
+    color: white;
+}

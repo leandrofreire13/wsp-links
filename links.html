@@ -37,12 +37,6 @@ https://apps.apple.com/br/app/wise-up-online/id1476457267
 📍 Link para acesso através do computador, tablet, notebook e Smart TV:
 https://online.wiseup.com/login?lang=pt
 
-
-ASSISTA AOS VÍDEOS QUE EXPLICAM EM DETALHES COMO UTILIZAR A SUA PLATAFORMA E SUAS AULAS AO VIVO:
-
-Wise Up Online: https://bit.ly/469LJ9A
-Wise Up Live: https://bit.ly/3rndyMF
-
 DICAS FUNDAMENTAIS PARA OS SEUS ESTUDOS AO LONGO DESSE ANO  🇺🇸
 
 ▪️Resiliência:
@@ -85,6 +79,16 @@ Oi, conheci um curso de inglês online bem legal e lembrei de você. O Leandro q
 
 <br><br>
 
+<h2>Vídeos de Boas vindas</h2>
+<textarea name="" id="" cols="30" rows="5" class="link-text-4 form-control">
+Assista o passo a passo para ter um melhor aproveitamento das suas aulas na Wise Up.
+Boas aulas!
+
+Wise Up Online: https://bit.ly/469LJ9A
+Wise Up Live: https://bit.ly/3rndyMF
+</textarea>
+<button class="btn btn-warning" id="copiar-4">Copiar</button>
+
 </div>
 <br>
 <br>
@@ -125,6 +129,15 @@ Oi, conheci um curso de inglês online bem legal e lembrei de você. O Leandro q
     let button3 = document.querySelector('#copiar-3');
     button3.addEventListener('click', function(e) {
     let textArea = document.querySelector('.link-text-3');
+    textArea.select();
+    document.execCommand('copy');
+
+    });
+
+    //Botão dos vídeos
+    let button4 = document.querySelector('#copiar-4');
+    button4.addEventListener('click', function(e) {
+    let textArea = document.querySelector('.link-text-4');
     textArea.select();
     document.execCommand('copy');
 

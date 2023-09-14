@@ -11,11 +11,12 @@
         <h3><a href="https://checkout.wiseup.com/lead?seller=wsp&route=payment&source=0034v00003DYT6hAAH" target="_blank">Abrir Checkout</a> </h3><br>
     </div>
 
-    <div class="container">
-        <p>Link de vendas</p>
-        <textarea cols="10" rows="1" class="link-text form-control">https://wup.onl/0034v00003DYT6hAAH</textarea>
-        <button class="btn btn-warning" id="copiar">Copiar</button>
-        <br><br>
+<div class="container">
+
+<p>Link de vendas</p>
+<textarea cols="10" rows="1" class="link-text form-control">https://wup.onl/0034v00003DYT6hAAH</textarea>
+<button class="btn btn-warning" id="copiar">Copiar</button>
+<br><br>
 
        
  <!--Link pos matricula-->
@@ -61,27 +62,33 @@ https://wiseup.com/politica-de-privacidade/
 -Termos de acesso:
 https://wiseup.com/checkout/termos-de-servico/
 </textarea>
+
 <button class="btn btn-warning" id="copiar-1">Copiar</button>
 <br><br>
+
 <h2>Textos para validação</h2>
 <p>Para quem matrículou</p>
-<text name="" id="" cols="30" rows="5" class="link-text-3 form-control">
-Oi, entrei em um curso de inglês online bem legal e lembrei de você. O Leandro que me atendeu vai te ligar (DDD dele é 11). Você tem interesse?
-</text>
-<button class="btn btn-warning" id="copiar-3">Copiar</button>
+<textarea name="" id="" cols="10" rows="1" class="link-text-2 form-control">
+Oi, entrei em um curso de inglês online bem legal e lembrei de você. O Leandro que me atendeu vai te ligar (DDD dele é 11). Você tem interesse?</textarea>
+<button class="btn btn-warning" id="copiar-2">Copiar</button>
 
 <br><br>
 <p>Para quem NÃO matrículou</p>
-<text name="" id="" cols="30" rows="5" class="link-text-4 form-control">
-Oi, conheci um curso de inglês online bem legal e lembrei de você. O Leandro que me atendeu vai te ligar (DDD dele é 11) Você tem interesse?
-</text>
-<button class="btn btn-warning" id="copiar-4">Copiar</button>
+<textarea name="" id="" cols="10" rows="1" class="link-text-3 form-control">
+Oi, conheci um curso de inglês online bem legal e lembrei de você. O Leandro que me atendeu vai te ligar (DDD dele é 11) Você tem interesse?</textarea>
+<button class="btn btn-warning" id="copiar-3">Copiar</button>
 
 <br><br>
 
 </div>
-<br><br><br><br><br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
 </body>
+
 <script>
     //Botão do link de vendas
     let button = document.querySelector('#copiar');
@@ -91,7 +98,7 @@ Oi, conheci um curso de inglês online bem legal e lembrei de você. O Leandro q
     document.execCommand('copy');
 
     });
-     //Botão do WOL
+    //Botão do bem vindo
      let button1 = document.querySelector('#copiar-1');
     button1.addEventListener('click', function(e) {
     let textArea = document.querySelector('.link-text-1');
@@ -100,20 +107,20 @@ Oi, conheci um curso de inglês online bem legal e lembrei de você. O Leandro q
 
     });
     
-     //Botão do texto de validação 1
-     let button3 = document.querySelector('#copiar-3');
-    button3.addEventListener('click', function(e) {
-    let text = document.querySelector('.link-text-3');
-    text.select();
+     //Botão do bem vindo
+    let button2 = document.querySelector('#copiar-2');
+    button2.addEventListener('click', function(e) {
+    let textArea = document.querySelector('.link-text-2');
+    textArea.select();
     document.execCommand('copy');
 
     });
 
-    //Botão do texto de validação 2
-    let button4 = document.querySelector('#copiar-4');
-    button4.addEventListener('click', function(e) {
-    let text = document.querySelector('.link-text-4');
-    text.select();
+     //Botão do bem vindo
+    let button3 = document.querySelector('#copiar-3');
+    button3.addEventListener('click', function(e) {
+    let textArea = document.querySelector('.link-text-3');
+    textArea.select();
     document.execCommand('copy');
 
     });

@@ -17,6 +17,10 @@
 <button class="btn btn-warning" id="copiar">Copiar</button>
 <br><br>
 
+<p>Link de vendas recorrente</p>
+<textarea cols="10" rows="1" class="link-text-rec form-control">https://wup.onl/0034v00003DYT6hAAH/recorrente</textarea>
+<button class="btn btn-warning" id="copiar-rec">Copiar</button>
+<br><br>
        
  <!--Link pos matricula-->
 <h4> Bem vindo(a)</h4>
@@ -37,12 +41,6 @@ https://apps.apple.com/br/app/wise-up-online/id1476457267
 https://online.wiseup.com/login?lang=pt
 
 Assista o passo a passo para ter um melhor aproveitamento das suas aulas na Wise Up.
-
-Wise Up Online: 
-https://bit.ly/469LJ9A
-
-Wise Up Live: 
-https://bit.ly/3rndyMF
 
 DICAS FUNDAMENTAIS PARA OS SEUS ESTUDOS AO LONGO DESSE ANO  🇺🇸
 
@@ -105,6 +103,15 @@ Oi, conheci um curso de inglês online bem legal e lembrei de você. O Leandro q
     let button = document.querySelector('#copiar');
     button.addEventListener('click', function(e) {
     let textArea = document.querySelector('.link-text');
+    textArea.select();
+    document.execCommand('copy');
+
+    });
+
+      //Botão do link de vendas
+    let button = document.querySelector('#copiar-rec');
+    button.addEventListener('click', function(e) {
+    let textArea = document.querySelector('.link-text-rec');
     textArea.select();
     document.execCommand('copy');
 
